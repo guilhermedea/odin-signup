@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "Odin";
+    src: url('fonts/Norse-Bold.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+    --gray: #f9fafb
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    font-family: "Titillium Web", sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+label {
+    font-size: 0.7rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+input {
+    width: 9rem;
+    border: solid 1px rgb(218, 218, 221);
+    border-radius: 3px;
+}
+
+input:focus {
+    -webkit-box-shadow: 1px 10px 8px 0px rgba(0,0,0,0.61); 
+    box-shadow: 1px 5px 8px 0px rgba(0,0,0,0.61);
+    outline: 1px solid rgb(11, 94, 248);
+}
+
+input:invalid {
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.siderbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.siderbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    filter: brightness(80%);
+    width: 40vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    width: 40vw;
+    background-color: rgba(25, 25, 26, 0.4);
+    margin-top: 10rem;
+    font-family: "Odin";
+    color: white;
+    font-size: 5rem;
+}
+
+/* .img-credit {
+    position: relative;
+    top: 100%;
+    text-align: center;
+    color: white;
+    min-width: 1em;
+    overflow-wrap: break-word;
+} */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem 5rem 1rem 2rem;
+    height: 100vh;
+    width: 10vw;
+    justify-content: space-between;
+}
+
+.text-content {
+    background-color: var(--gray);
+    height: clamp(30vh, 50vh);
+    text-align: left;
+    padding: 5rem 7rem 1rem 2rem;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    line-height: 1.3rem;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    height: clamp (25%, 15rem, 40% );
+    width: 60vw;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 1px 10px 8px 0px rgba(0,0,0,0.61); 
+    box-shadow: 1px 10px 8px 0px rgba(0,0,0,0.61);
+    
+}
+
+.form-container > p {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 3% 0 5% 6%;
+}
+
+.form-content {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+
+.form-item {
+    margin: 5px;
+}
+
+.form-item label {
+    display: block;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray);
+    height: 45vh;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-top: 5%;
+}
+
+.submit-button > button {
+    width: 15vw;
+    height: 5vh;
+    background-color: #9c034d;
+    color: white;
+    font-size: 1rem;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    border-radius: 9px;
+}
+
+.button-container > p {
+    font-size: 1rem;
+}
